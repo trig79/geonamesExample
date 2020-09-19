@@ -1,0 +1,94 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+		<meta charset="utf-8">
+		<title>AJAX/PHP/CURL/JSON example</title>
+		<meta name="description" content="AJAX/PHP/CURL/JSON example">
+		<meta name="author" content="Martin Durrant">
+		<link href="./libs/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1>API Exercise using AJAX, JQUERY, cURL</h1>
+		<p>The first API accesses 'Open Weather API'. The 2nd API call takes the Latitude and Longitutde information from this call
+		to pull data from the Opencage geolocate API and return a Json Info to page. Finally an external link with 
+		fixed coords loads full Jsonpage in new window</p>
+		<div id="selection">
+			<h2>Please enter a city name and click submit.</h2>
+			<input id="whatCity"type="text" value="paris">
+			<button id="btnRun">Submit</button>
+		</div>
+			<br><br>
+
+		<div id="divResults">
+			<table>
+				<tr>
+					<td align="right">City:   </td>
+					<td id="txtCity"></td>
+				</tr>
+				<tr>
+					<td align="right">Description:   </td>
+					<td id="txtDescription"></td>
+				</tr>
+				<tr>
+					<td align="right">Temp:   </td>
+					<td id="txtTemp"></td>
+				</tr>
+				<tr>
+					<td align="right">Country:   </td>
+					<td id="txtCountry"></td>
+				</tr>
+				<tr>
+					<td align="right">Latitude:   </td>
+					<td id="txtLat"></td>
+				</tr>
+				<tr>
+					<td align="right">Longitude:   </td>
+					<td id="txtLon"></td>
+				</tr>
+
+			</table>
+			<br>
+		</div>
+
+		<div id="selection">
+			<h2>To activate the 2nd API call please select run.</h2>
+			<button id="btnRun2">Run</button>
+			<br>
+			<div id="divResults">
+				<br>
+				<table>
+					<tr>
+						<td align="right">Drive on side of Road:   </td>
+						<td id="txtSide"></td>
+					</tr>
+					<tr>
+						<td align="right">Speed Measurement:   </td>
+						<td id="txtSpeed"></td>
+					</tr>
+					<tr>
+						<td align="right">Currency Name:   </td>
+						<td id="txtCurrency"></td>
+					</tr>
+					<tr>
+						<td align="right">Currency Symbol:   </td>
+						<td id="txtSymbol"></td>
+					</tr>
+	
+				</table>
+				<br>
+			</div>		</div>
+			
+			<p>Launches direct link to geolocate API using coords: 51.952659, 7.632473. Returns Json</p>
+			<a href="./libs/php/geolocate2.php?q=51.4564,0.8534&lang=en" target="_Blank">Link</a>
+
+		<script type="application/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+		<script type="application/javascript" src="libs/js/script.js"></script>
+
+	</body>
+
+</html>

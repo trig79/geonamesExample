@@ -1,0 +1,25 @@
+
+html {
+	font-size: 62.5%
+}
+
+.main {
+    font-size: 2rem;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+
+h2 {
+	font-size: 2.1rem;
+}
+
+p {
+	font-size: 1.5rem;
+}
+
+
+td {
+	padding: .3rem
+}
